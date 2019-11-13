@@ -1,0 +1,11 @@
+def convert_to_string(some_list):
+    output = ''
+    for i in range(len(some_list)):
+        if i != len(some_list) -1:
+            output += str(some_list[i]+ ', ') 
+        else:
+            output += 'and ' + str(some_list[i])
+    return output
+
+some_list = ['apples','bananas', 'tofu', 'cats']
+print(convert_to_string(some_list))
